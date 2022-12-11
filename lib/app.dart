@@ -1,3 +1,5 @@
+import 'package:disaoled_people/config/routes/router.dart';
+import 'package:disaoled_people/config/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -5,10 +7,10 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(child: Text('Hello')),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: theme,
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }
