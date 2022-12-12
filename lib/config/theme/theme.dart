@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 
-const Color darkBlue = Color(0xff0b1d37);
-const Color darkBackground = Color.fromARGB(255, 10, 26, 48);
-const Color orange = Color(0xffF68D32);
-const Color karmedi = Color(0xffD6744E);
-const Color beg = Color(0xffF6D992);
+const Color secondaryColor = Color(0xffE80D61);
+const Color primaryColor = Color(0xffA01596);
 const Color white = Color(0xffffffff);
 const String font = 'Sukar';
 
-ThemeData lightTheme = ThemeData(
+ThemeData theme = ThemeData(
   brightness: Brightness.light,
   primaryColor: white,
   backgroundColor: white,
@@ -16,21 +13,27 @@ ThemeData lightTheme = ThemeData(
   appBarTheme: const AppBarTheme(
       elevation: 0.0,
       color: white,
+      centerTitle: true,
       titleTextStyle: TextStyle(
-          color: darkBlue,
+          color: primaryColor,
           fontFamily: font,
           fontSize: 26,
           fontWeight: FontWeight.bold)),
   textTheme: const TextTheme(
-      headlineMedium: TextStyle(
-          color: darkBlue,
+      headlineLarge: TextStyle(
+          color: primaryColor,
           fontFamily: font,
           fontSize: 24,
           fontWeight: FontWeight.bold),
-      headlineSmall: TextStyle(
-          color: darkBlue,
+      headlineMedium: TextStyle(
+          color: primaryColor,
           fontFamily: font,
           fontSize: 20,
+          fontWeight: FontWeight.bold),
+      headlineSmall: TextStyle(
+          color: primaryColor,
+          fontFamily: font,
+          fontSize: 18,
           fontWeight: FontWeight.normal)),
-  iconTheme: const IconThemeData(color: orange),
+  iconTheme: const IconThemeData(color: primaryColor),
 );
